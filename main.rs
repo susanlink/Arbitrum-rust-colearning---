@@ -128,7 +128,7 @@ async fn main() -> Result<()> {
     
     // 测试智能合约查询（Arbitrum 上的 USDC 合约）
     println!("\n💎 测试智能合约查询:");
-    let usdc_contract: H160 = H160::from_str("0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d")?;
+    let usdc_contract: H160 = H160::from_str("0x5D8f25f74c09DeE91128CB4329e4ce9f14b147eF")?;
     match provider.get_code(usdc_contract, None).await {
         Ok(code) => {
             if code.len() > 0 {
@@ -148,4 +148,5 @@ async fn main() -> Result<()> {
     println!("✨ Hello Arbitrum Web3!");
     
     Ok(())
+
 }
