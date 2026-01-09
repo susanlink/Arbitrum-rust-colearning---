@@ -1,0 +1,12 @@
+[package]
+name = "hello_web3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = { version = "2.0.14", features = ["rustls"] } 
+tokio = { version = "1.35", features = ["full"] }
+eyre = "0.6"
+dotenv = "0.15"
+serde_json = "1.0"
+hex = "0.4"
